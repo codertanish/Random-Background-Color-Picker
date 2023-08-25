@@ -6,21 +6,25 @@ root.title("Random Background Color")
 root.geometry("400x200")
 root.configure(bg = "white")
 
-colors_available = ["Red", "Maroon", "CadetBlue", "SpringGreen", "Pink", "LightCoral", "PaleGreen"]
+colors_available = ["Red", "Maroon", "CadetBlue", "SpringGreen", "Pink", "LightCoral", "PaleGreen", "PaleGoldenrod", "PaleVioletRed", "PaleTurquoise"]
 colors_syntax_finder = {"Red":"Red",
           "Maroon":"Maroon1",
           "CadetBlue":"CadetBlue2",
           "SpringGreen":"SpringGreen2",
           "Pink":"Pink3",
           "LightCoral":"LightCoral",
-          "PaleGreen":"PaleGreen"}
+          "PaleGreen":"PaleGreen",
+          "PaleGoldenrod":"PaleGoldenrod",
+          "PaleVioletRed":"PaleVioletRed",
+          "PaleTurquoise":"PaleTurquoise"
+          }
 
-colors = {"Colors":["red", "maroon1", "cadetblue2", "springgreen2", "pink3", "lightcoral", "palegreen"]}
+colors = {"Colors":["red", "maroon1", "cadetblue2", "springgreen2", "pink3", "lightcoral", "palegreen", "palegoldenrod", "palevioletred", "paleturquoise"]}
 
 
 
 def pickColor():
-    color_index = random.randint(0,6)
+    color_index = random.randint(0,9)
 
     color_picked_key_value = colors_available[color_index]
     color_syntax = colors_syntax_finder[color_picked_key_value]
